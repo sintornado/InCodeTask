@@ -1,0 +1,11 @@
+<mat-card class="list">
+  <mat-nav-list>
+    <mat-list-item class="list-item" *ngFor="let client of cs.clientsList | async" (click)="onItemClick(client)">
+      <img matListAvatar src="{{client.general.avatar}}" alt="photo">
+      <h3 matLine> {{client.general.firstName}}  {{client.general.lastName}}</h3>
+      <p matLine>
+        <span> {{client.job.title}} </span>
+      </p>
+    </mat-list-item>
+  </mat-nav-list>
+</mat-card>

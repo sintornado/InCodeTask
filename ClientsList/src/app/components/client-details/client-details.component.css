@@ -1,0 +1,27 @@
+.details-block {
+    background: lightgray;
+    max-width: 800px;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-columns: auto auto;   
+}
+.block1 {
+    grid-column: 1/-1;
+    background: lightblue;
+}
+.block2 {
+    background: lightcyan;
+    width: 150px;
+}
+.block3 {
+    background: lightyellow;
+    width: 540px;
+}
+.details-img {
+    width: 128px;
+    height: 128px;
+    border: solid black 1px;
+    float: left;
+}

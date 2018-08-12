@@ -1,0 +1,8 @@
+<mat-card class="search-block">
+  <form class="example-form">
+    <p>{{cs.searchSubject.value}}</p>
+    <mat-form-field class="input">
+      <input matInput placeholder="Search a client..." [(ngModel)]="cs.searchSubject.value" (input)="onSearchChange($event.target.value)" name="searchInput" type="search">
+    </mat-form-field>
+  </form>
+</mat-card>
